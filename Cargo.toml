@@ -2,11 +2,16 @@
 name = "pyramid_os"
 version = "0.1.0"
 edition = "2024"
+author = ["Author Name Teja Thota"]
 
-[dependencies]
 
 [profile.dev]
 panic = "abort"
 
 [profile.release]
 panic = "abort"
+
+[[bin]]
+name = "pyramid_os"
+test = false
+bench = false
